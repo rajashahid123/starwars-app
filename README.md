@@ -25,34 +25,34 @@ It fetches data from the Star Wars API (SWAPI) and displays a list of characters
     http://localhost:5173
 
 
-    Features Implemented
+  # What You Implemented (and Bonus Features)
 
-Fetch and display Star Wars characters from SWAPI
+- Fetched Star Wars characters from SWAPI (`/people` endpoint)  
+- Implemented pagination, loading, and error handling  
+- Displayed character cards with random blurred images  
+- Clicking a card opens a modal with character details:
+  - Name, Height, Mass, Birth Year  
+  - Date Added (formatted as dd-MM-yyyy)  
+  - Number of films  
+  - Homeworld details (name, terrain, climate, population)  
+- Search characters by name (partial match)  
+- Filter characters by homeworld  
+- Combined search + filter functionality  
+- Fully responsive UI for mobile, tablet, and desktop
 
-Pagination, loading, and error handling
 
-Character cards with random blurred images
+# login  =  admin
+# password = 1234
 
-Click on a card to open a modal with full details:
 
-Name, Height, Mass, Birth Year
+## Trade-offs / Design Choices
 
-Date Added (formatted as dd-MM-yyyy)
+- Used **Tailwind CSS** for fast and responsive styling instead of writing custom CSS  
+- Components are modular and reusable for better maintainability  
+- Functional components + React Hooks were used for simplicity and modern React practices  
+- Random placeholder images from Picsum Photos were used instead of fetching real images, to avoid extra API dependencies  
+- Did not implement full authentication or persistent token storage as it was optional (bonus feature)
 
-Number of films
 
-Homeworld details (name, terrain, climate, population)
 
-Search by name and filter by homeworld
-
-Fully responsive design for mobile, tablet, and desktop
-
-Design Choices / Trade-offs
-
-Used Tailwind CSS for rapid styling and responsiveness
-
-Components are modular and reusable
-
-Functional components + React Hooks for simplicity and readability
-
-Placeholder images used from Picsum Photos to avoid external image dependencies
+ 
